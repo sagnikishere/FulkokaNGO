@@ -1,0 +1,158 @@
+/* --- Header --- */
+.mithila-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 253, 253, 0.7)), url('pics/Mithila International Centre/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.mithila-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.214);
+}
+
+.mithila-header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--accent-yellow); /* Uses yellow from global style */
+}
+
+/* --- About Section --- */
+.mithila-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mithila-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.divider-left {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-yellow);
+    margin-bottom: 25px;
+}
+
+.mithila-text p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0077b5; /* LinkedIn Blue */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-linkedin:hover {
+    background: #005582;
+    transform: translateY(-2px);
+}
+
+.mithila-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Info Cards (Vision/Mission) --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid var(--primary-green);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.focus-list {
+    text-align: left;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.focus-list li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* --- Video Container --- */
+.video-container-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.video-container-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .mithila-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .mithila-grid .divider-left {
+        margin: 0 auto 25px auto; /* Center the divider */
+    }
+
+    .mithila-header h1 { font-size: 2.5rem; }
+    .mithila-header p { font-size: 1.2rem; }
+    
+    .mithila-image { order: -1; margin-bottom: 30px; } /* Image on top */
+}
