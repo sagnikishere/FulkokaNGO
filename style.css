@@ -1,7 +1,7 @@
 /* --- Global Variables & Reset --- */
 :root {
-    --primary-green: #572e7d; /* Deep Green */
-    --accent-yellow: #572e7d; /* Vibrant Yellow */
+    --primary-green: #572e7d; /* Deep Green/Purple theme */
+    --accent-yellow: #572e7d; /* Kept your existing color code */
     --footer-bg: #FFF9F0;     /* Cream background */
     --purple-logo: #4A148C;   /* Dark Purple */
     --text-dark: #333;
@@ -60,7 +60,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Updated Logo Image Styling */
 .logo-img {
-    height: 50px; /* Adjust size as needed */
+    height: 50px; 
     width: auto;
     object-fit: contain;
 }
@@ -176,7 +176,6 @@ img { max-width: 100%; height: auto; display: block; }
 /* Define your images here */
 .cb-slideshow li:nth-child(1) span { 
     background-image: url('pics/hero/IMG_2210.jpg'); 
-    
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url('pics/hero/IMG_3993.jpg'); 
@@ -300,7 +299,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-weight: 700;
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER (Updated) --- */
 .main-footer {
     background-color: var(--footer-bg);
     padding: 80px 0 0;
@@ -316,17 +315,51 @@ img { max-width: 100%; height: auto; display: block; }
     padding-left: 5%; padding-right: 5%;
 }
 
-.footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-.logo-circle {
-    background: var(--purple-logo);
-    color: white;
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
+/* Updated Footer Logo Container */
+.footer-logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
 }
+
+/* New: Footer Logo Image Sizing */
+.footer-logo-img {
+    height: 45px; /* Adjust height to match text balance */
+    width: auto;
+    object-fit: contain;
+}
+
 .footer-col h3 { font-size: 1.2rem; margin-bottom: 25px; font-weight: 700; }
 .footer-links li { margin-bottom: 12px; }
-.social-icons { display: flex; gap: 15px; }
+
+/* Updated: Social Icons & Follow Heading Alignment */
+.follow-heading {
+    margin-top: 35px; /* Adds space above 'Follow us' */
+    margin-bottom: 15px !important; /* Reduces space below 'Follow us' */
+}
+
+.social-icons { 
+    display: flex; 
+    gap: 20px; /* Increased gap */
+    align-items: center; 
+}
+
+/* Bigger Social Icons */
+.social-icons a {
+    font-size: 1.6rem; /* Bigger icons */
+    color: #333;
+    transition: 0.3s ease;
+    display: flex;
+}
+.social-icons a:hover {
+    color: var(--primary-green);
+    transform: translateY(-3px);
+}
+
 .newsletter-form input { padding: 15px; width: 100%; border: 1px solid #ccc; margin-bottom: 10px; }
 .newsletter-form button { width: 100%; background: var(--accent-yellow); border: none; padding: 15px; font-weight: 800; cursor: pointer; }
 
@@ -350,7 +383,6 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 1024px) {
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .glowing-text { font-size: 2.8rem; }
-    /* Ensure donate button has spacing on tablet */
     .nav-links { gap: 15px; }
 }
 
@@ -380,14 +412,13 @@ img { max-width: 100%; height: auto; display: block; }
     .nav-links li { margin: 15px 0; }
     .nav-links a { font-size: 1.2rem; }
     
-    /* Adjusted the button in mobile menu */
     .btn-donate-nav { 
         margin-top: 20px; 
         display: inline-block;
     }
 
     /* Typography Reductions */
-    .glowing-text { font-size: 2.2rem; } /* Adjusted for mobile */
+    .glowing-text { font-size: 2.2rem; }
     .glowing-subtext { font-size: 1rem; }
     .section-header h2 { font-size: 2rem; }
     .video-overlay-text h2 { font-size: 1.8rem; }
