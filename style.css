@@ -1,7 +1,7 @@
 /* --- Global Variables & Reset --- */
 :root {
-    --primary-green: #2E7D32; /* Deep Green */
-    --accent-yellow: #FFD700; /* Vibrant Yellow */
+    --primary-green: #572e7d; /* Deep Green */
+    --accent-yellow: #572e7d; /* Vibrant Yellow */
     --footer-bg: #FFF9F0;     /* Cream background */
     --purple-logo: #4A148C;   /* Dark Purple */
     --text-dark: #333;
