@@ -1,11 +1,12 @@
 /* --- Page Header --- */
 .involve-header {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(255, 255, 255, 0.6)), url('pics/Mithila International Centre/background.png');
+    background: linear-gradient(rgba(87, 46, 125, 0.85), rgba(87, 46, 125, 0.85)), url('pics/Mithila International Centre/background.png');
     background-size: cover;
     background-position: center;
     height: 50vh;
     min-height: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
@@ -15,7 +16,9 @@
 
 .involve-header h1 {
     font-size: 3.5rem;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* --- Donation Card Section --- */
@@ -23,24 +26,25 @@
     background: white;
     padding: 60px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    border-top: 6px solid #e91e63; /* Pink Accent */
+    box-shadow: 0 15px 40px rgba(87, 46, 125, 0.1); /* Purple shadow */
+    border-top: 6px solid #572e7d; /* Deep Purple Accent */
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: -50px; /* Slight overlap effect for modern look */
+    top: -50px; /* Overlap effect */
+    border: 1px solid #f0e6ff;
 }
 
 .donate-icon {
     font-size: 4rem;
-    color: #e91e63;
+    color: #572e7d;
     margin-bottom: 20px;
 }
 
 .donate-card h2 {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: #572e7d;
     margin-bottom: 20px;
 }
 
@@ -53,35 +57,35 @@
 
 .btn-large-donate {
     display: inline-block;
-    background: #e91e63;
+    background: #572e7d; /* Deep Purple */
     color: white;
     font-size: 1.2rem;
     padding: 18px 50px;
     border-radius: 50px;
     font-weight: 700;
     margin-bottom: 25px;
-    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+    box-shadow: 0 5px 15px rgba(87, 46, 125, 0.4);
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .btn-large-donate:hover {
-    background: #c2185b;
+    background: #3b1b5e;
     transform: translateY(-3px);
 }
 
 .donate-note {
-    background: #fff3e0; /* Light orange bg */
+    background: #f0e6ff; /* Light purple bg */
     padding: 15px;
     border-radius: 8px;
     font-size: 0.9rem;
-    color: #e65100;
-    border: 1px solid #ffe0b2;
+    color: #4a148c;
+    border: 1px solid #d1c4e9;
 }
 
 /* --- Volunteer Section --- */
 .volunteer-section {
-    background: #f1f8e9; /* Very light green */
-    padding-top: 40px; /* Adjusted since donate card overlaps */
+    background: #fcfaff; /* Very light purple/white */
+    padding-top: 40px; 
     padding-bottom: 80px;
 }
 
@@ -93,8 +97,15 @@
 
 .volunteer-header h2 {
     font-size: 2.5rem;
-    color: var(--primary-green);
+    color: #572e7d;
     margin-bottom: 15px;
+}
+
+.volunteer-header .divider {
+    width: 60px;
+    height: 4px;
+    background: #572e7d;
+    margin: 15px auto 20px;
 }
 
 /* --- Form Styling --- */
@@ -102,12 +113,13 @@
     background: white;
     padding: 50px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(87, 46, 125, 0.05);
     max-width: 800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
+    border: 1px solid #f0e6ff;
 }
 
 .form-group {
@@ -117,7 +129,7 @@
 }
 
 .form-group.full-width {
-    grid-column: span 2; /* Make textarea span full width */
+    grid-column: span 2; 
 }
 
 .form-group label {
@@ -130,7 +142,7 @@
 .form-group select, 
 .form-group textarea {
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
     background: #f9f9f9;
@@ -142,13 +154,13 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-green);
+    border-color: #572e7d;
     background: white;
 }
 
 .btn-submit {
     grid-column: span 2;
-    background: var(--primary-green);
+    background: #572e7d;
     color: white;
     font-size: 1.1rem;
     font-weight: 700;
@@ -161,43 +173,32 @@
 }
 
 .btn-submit:hover {
-    background: #1b5e20;
+    background: #3b1b5e;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS FIXES
-   ========================================= */
-
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
-    /* Header */
     .involve-header { height: 40vh; min-height: 250px; }
     .involve-header h1 { font-size: 2.2rem; }
 
-    /* Donate Card */
     .donate-card {
-        top: 0; /* Remove overlap on mobile */
-        padding: 40px 20px; /* Reduce padding */
+        top: 0; 
+        padding: 40px 20px; 
         margin-bottom: 40px;
     }
 
     .donate-card h2 { font-size: 2rem; }
     .donate-text { font-size: 1rem; }
-    .btn-large-donate { width: 100%; padding: 15px; } /* Full width button */
+    .btn-large-donate { width: 100%; padding: 15px; }
 
-    /* Volunteer Form */
     .volunteer-form {
-        grid-template-columns: 1fr; /* Stack inputs vertically */
+        grid-template-columns: 1fr; 
         padding: 30px 20px;
         gap: 20px;
     }
 
-    .form-group.full-width {
-        grid-column: span 1; /* Reset span */
-    }
-
-    .btn-submit {
-        grid-column: span 1;
-    }
+    .form-group.full-width { grid-column: span 1; }
+    .btn-submit { grid-column: span 1; }
 
     .volunteer-header h2 { font-size: 2rem; }
 }
