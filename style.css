@@ -228,3 +228,10 @@ img { max-width: 100%; height: auto; display: block; }
     .bottom-flex { flex-direction: column; gap: 10px; }
     .glowing-text { font-size: 2.2rem; }
 }
+.author-name {
+    font-style: italic;
+    margin-top: -10px; /* Pulls it closer to the quote */
+    margin-bottom: 40px; /* Space before the button */
+    font-size: 1.5rem;
+    font-weight: 300;
+}

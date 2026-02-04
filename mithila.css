@@ -1,6 +1,6 @@
 /* --- Header with Flex Layout (Logo + Text) --- */
 .mithila-header {
-    background: linear-gradient(rgba(87, 46, 125, 0.9), rgba(87, 46, 125, 0.9)), url('pics/Mithila International Centre/background.png');
+    background: linear-gradient(rgba(87, 46, 125, 0.9), rgba(255, 255, 255, 0.9)), url('pics/Mithila International Centre/background.png');
     background-size: cover;
     background-position: center;
     height: 55vh;

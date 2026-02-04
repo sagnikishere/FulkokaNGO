@@ -1,6 +1,6 @@
 /* --- Page Header --- */
 .involve-header {
-    background: linear-gradient(rgba(87, 46, 125, 0.85), rgba(87, 46, 125, 0.85)), url('pics/Mithila International Centre/background.png');
+    background: linear-gradient(rgba(87, 46, 125, 0.85), rgba(255, 255, 255, 0.85)), url('pics/Mithila International Centre/background.png');
     background-size: cover;
     background-position: center;
     height: 50vh;
