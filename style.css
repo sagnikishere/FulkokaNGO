@@ -134,9 +134,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .cb-slideshow:after { content: ''; background: rgba(0,0,0,0.6); z-index: 1; }
 
-.cb-slideshow li:nth-child(1) span { background-image: url('pics/hero/IMG_2210.jpg'); }
-.cb-slideshow li:nth-child(2) span { background-image: url('pics/hero/IMG_2722.jpg'); animation-delay: 6s; }
-.cb-slideshow li:nth-child(3) span { background-image: url('pics/hero/IMG_2757 (1).jpg'); animation-delay: 12s; }
+.cb-slideshow li:nth-child(1) span { background-image: url('pics/hero/IMG_2210.webp'); }
+.cb-slideshow li:nth-child(2) span { background-image: url('pics/hero/IMG_2722.webp'); animation-delay: 6s; }
+.cb-slideshow li:nth-child(3) span { background-image: url('pics/hero/IMG_2757 (1).webp'); animation-delay: 12s; }
 
 @keyframes imageAnimation { 
     0% { opacity: 0; transform: scale(1); }
@@ -175,7 +175,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* CTA Section */
 .call-to-action {
-    background: linear-gradient(rgba(87, 46, 125, 0.85), rgba(87, 46, 125, 0.85)), url('pics/hero/IMG_2722.jpg');
+    background: linear-gradient(rgba(87, 46, 125, 0.85), rgba(87, 46, 125, 0.85)), url('pics/hero/IMG_2722.webp');
     background-size: cover; background-position: center; text-align: center; color: white;
 }
 .call-to-action h2, .call-to-action p { color: white; }
